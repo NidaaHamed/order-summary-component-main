@@ -10,28 +10,69 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .parent {
+      width: 100vw;
+      height: 100vh;
+      background-image: url('images/pattern-background-mobile.svg') no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .child {
+      width: 80%;
+      height: 90%;
+      text-align: center;
+    }
+    .child > img {
+      width: 100%;
+      height: 30%;
+    }
+    .plan {
+      background-color: #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    button {
+      display: block;
+      width: 70%;
+      margin: auto;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Order Summary
+  <div class="parent">
+    <div class="child">
+      <img src="images/illustration-hero.svg" alt="hero">
+      <div>
+        <h1>Order Summary</h1>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+        <div class="plan">
+          <img src="images/icon-music.svg" alt="music">
+          <div>Annual Plan
+            $59.99/year</div>
+          <a href="">Change</a>
+        </div>
+        <button id="proceed">Proceed to Payment</button>
+        <button id="cancel">Cancel Order</button>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://nidaahamed.github.io/NidaaPortfolio/">Nidaa Sallam</a>.
   </div>
 </body>
 </html>
