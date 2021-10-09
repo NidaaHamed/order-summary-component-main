@@ -7,60 +7,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    .parent {
-      width: 100vw;
-      height: 100vh;
-      background-image: url('images/pattern-background-mobile.svg') no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-    .child {
-      width: 80%;
-      height: 90%;
-      text-align: center;
-    }
-    .child > img {
-      width: 100%;
-      height: 30%;
-    }
-    .plan {
-      background-color: #eee;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    button {
-      display: block;
-      width: 70%;
-      margin: auto;
-    }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="parent">
     <div class="child">
       <img src="images/illustration-hero.svg" alt="hero">
-      <div>
+      <div class="main">
         <h1>Order Summary</h1>
         <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
           device anywhere you like!</p>
         <div class="plan">
-          <img src="images/icon-music.svg" alt="music">
-          <div>Annual Plan
-            $59.99/year</div>
+          <div id="plan-left">
+            <img src="images/icon-music.svg" alt="music">
+            <div id="plan-text">
+              <span style="font-weight: bold;">Annual Plan</span>
+              <span style="color: #777;">$59.99/year</span>
+            </div>
+          </div>
           <a href="">Change</a>
         </div>
         <button id="proceed">Proceed to Payment</button>
