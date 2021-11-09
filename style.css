@@ -10,8 +10,7 @@
   }
   
   .parent {
-    width: 100vw;
-    min-height: 800px;
+    min-height: 100vh;
     background-image: url('images/pattern-background-mobile.svg');
     background-color: hsl(225, 100%, 94%);
     background-repeat: repeat-x;
@@ -22,7 +21,6 @@
   }
   .child {
     max-width: 350px;
-    min-height: 670px;
     text-align: center;
     background-color: #fff;
     border: hsl(225, 100%, 94%);
@@ -56,16 +54,14 @@
     border-radius: 8px;
 
   }
-  #plan-left {
+  .plan-left {
     display: flex;
 
   }
-  #plan-text {
+  .plan-text {
     margin-left: 10px;
   }
-  span {
-      display: block;
-  }
+  
   .plan > a:hover {
     text-decoration: none;
     color: hsl(256, 69%, 61%);
@@ -81,33 +77,32 @@
     font-weight: 900;
 
   }
-  #proceed {
+  .proceed {
       background-color: hsl(245, 75%, 52%);
       color: #fff;
       box-shadow: 0 6px 10px 0 rgba(20, 20, 20, 0.19);
   }
-  #proceed:hover {
+  .proceed:hover {
     background-color: hsl(256, 69%, 61%);
+    cursor: pointer;
 
   }
-  #cancel {
+  .cancel {
     background-color: #fff;
     color: #999;
 
   }
-  #cancel:hover {
+  .cancel:hover {
     color: #333;
+    cursor: pointer;
+
   }
   @media screen and (min-width: 760px) {
     .parent {
       background-image: url('images/pattern-background-desktop.svg');
       
     }
-    /* .child {
-      min-width: 300px;
-      min-height: 700px;
-
-    } */
+  
   }
   .attribution { 
     font-size: 11px;
